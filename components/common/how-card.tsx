@@ -35,7 +35,7 @@ export function HowTimeline({ children }: { children: React.ReactNode }) {
     <div ref={containerRef} className="relative">
       {/* Single vertical scroll-controlled line */}
       <motion.div
-        className="absolute left-6 top-0 w-px bg-border/50 origin-top"
+        className="absolute left-6 top-0 w-px bg-border origin-top"
         style={{ height: lineHeight }}
       />
 

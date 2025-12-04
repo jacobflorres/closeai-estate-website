@@ -61,7 +61,7 @@ export function SiteFooter() {
           </div>
         </div>
 
-        <Separator className="mb-8 bg-border/30" />
+        <Separator className="mb-8 bg-border/40" />
 
         {/* Row 2 */}
         <div className="flex flex-col sm:flex-row items-center justify-between space-y-4 sm:space-y-0">

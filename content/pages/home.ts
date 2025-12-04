@@ -144,7 +144,7 @@ export const homeContent = {
         },
       ],
       brands: {
-        title: "Team can be any size, and you can add or switch members as needed. Companies using our platform include:",
+        title: "We’ve helped more than 1,000 real estate agents nationwide, including top-producing teams and brokerages, generating over 50,000 high-quality leads to date.",
         logos: [
           { name: "Century 21", image: "/brands/century.png" },
           { name: "Coldwell Banker", image: "/brands/coldwell.png" },

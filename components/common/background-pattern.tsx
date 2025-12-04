@@ -15,7 +15,7 @@ export function BackgroundPattern({
       className={cn(
         "relative overflow-hidden",
         // --- Simple, lightweight dot pattern ---
-        "before:absolute before:inset-0 before:bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] dark:before:bg-[radial-gradient(#404040_1px,transparent_1px)] before:[background-size:18px_18px] before:opacity-18 dark:before:opacity-18 before:pointer-events-none",
+        "before:absolute before:inset-0 before:bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] dark:before:bg-[radial-gradient(#404040_1px,transparent_1px)] before:[background-size:18px_18px] before:opacity-20 dark:before:opacity-14 before:pointer-events-none",
         className
       )}
       {...props}
