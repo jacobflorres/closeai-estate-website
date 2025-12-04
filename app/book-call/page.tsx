@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     url: "/book-call",
     images: [
       {
-        url: "/main/open-graph.jpg",
+        url: `${process.env.NEXT_PUBLIC_SITE_URL || "https://close-ai.com"}/main/open-graph.jpg`,
         width: 1200,
         height: 630,
         alt: "Close AI - Book Demo Call",

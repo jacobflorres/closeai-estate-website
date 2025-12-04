@@ -1,41 +1,43 @@
-Summary
-A critical-severity vulnerability in React Server Components (CVE-2025-55182) affects React 19 and frameworks that use it, including Next.js (CVE-2025-66478). Under certain conditions, specially crafted requests could lead to unintended remote code execution.
+## These are the key insights from the performnace report:
 
-We created new rules to address this vulnerability and quickly deployed to the Vercel WAF to automatically protect all projects hosted on Vercel at no cost. We also worked with the React team to deliver recommendations to the largest WAF and CDN providers.
 
-We still strongly recommend upgrading to a patched version regardless of your hosting provider.
+These audits are identified as the top issues impacting your performance.
 
-Link to headingImpact
-Applications using affected versions of the React Server Components implementation may process untrusted input in a way that allows an attacker to perform remote code execution. The vulnerability is present in versions 19.0, 19.1.0, 19.1.1, and 19.2.0 of the following packages: :
+High
+Reduce JavaScript execution time TBT
+1.8s spent executing JavaScript
+Consider reducing the time spent parsing, compiling, and executing JS. You may find delivering smaller JS payloads helps with this.
 
-react-server-dom-parcel (19.0.0, 19.1.0, 19.1.1, and 19.2.0)
+Learn how to improve this
+URL	Total CPU Time	Script Evaluation	Script Parse
+https://fast.wistia.com/assets/external/publicApi.js
+1.1s	794ms	161ms
+Unattributable
+471ms	56ms	0ms
+https://close-ai.netlify.app/
+398ms	5ms	3ms
+https://close-ai.netlify.app/_next/static/chunks/febe4810d712afdf.js
+353ms	125ms	3ms
+https://fast.wistia.com/player.js
+321ms	290ms	7ms
+https://close-ai.netlify.app/_next/static/chunks/4784630355418e2a.js
+240ms	167ms	42ms
+https://fast.wistia.net/assets/external/captions.js
+96ms	73ms	22ms
+https://fast.wistia.net/assets/external/engines/hls_video.js
+57ms	42ms	1ms
 
-react-server-dom-webpack (19.0.0, 19.1.0, 19.1.1, and 19.2.0)
 
-react-server-dom-turbopack (19.0.0, 19.1.0, 19.1.1, and 19.2.0)
+A large DOM will increase memory usage, cause longer style calculations, and produce costly layout reflows.
 
-These packages are included in the following frameworks and bundlers:
-
-Next.js with versions ≥14.3.0-canary.77, ≥15 and ≥16
-
-Other frameworks and plugins that embed or depend on React Server Components implementation (e.g., Vite, Parcel, React Router, RedwoodSDK, Waku)
-
-Link to headingResolution
-After creating mitigations to address this vulnerability, we deployed them across our globally-distributed platform to quickly protect our customers. We still recommend upgrading to the latest patched version.
-
-Updated releases of React and affected downstream frameworks include hardened handling of user inputs to prevent unintended behavior. All users should upgrade to a patched version as soon as possible. If you are on Next.js 14.3.0-canary.77 or a later canary release, downgrade to the latest stable 14.x release.
-
-Link to headingFixed in:
-React: 19.0.1, 19.1.2, 19.2.1
-
-Next.js: 15.0.5, 15.1.9, 15.2.6, 15.3.6, 15.4.8, 15.5.7, 16.0.7
-
-Frameworks and bundlers using the aforementioned packages should install the latest versions provided by their respective maintainers.
-
-Link to headingCredit
-Thanks to Lachlan Davidson for identifying and responsibly reporting the vulnerability, and the Meta Security and React team for their partnership.
-
-Link to headingReferences
-Next.js GHSA
-
-React GHSA
+Learn how to improve this
+Statistic	Element	Value
+Total DOM Elements		1385
+Maximum DOM Depth	
+g > g > g > path
+<path d="M22 14L27 19">
+33
+Maximum Child Elements	
+body.generalsans_39c3afb2-module__6FKzFa__variable
+<body class="generalsans_39c3afb2-module__6FKzFa__variable font-sans antialiased">
+39

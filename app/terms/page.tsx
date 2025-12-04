@@ -13,6 +13,14 @@ export const metadata: Metadata = {
     title: "Terms of Service - Close AI",
     description: "Close AI Terms of Service - Terms and conditions.",
     url: "/terms",
+    images: [
+      {
+        url: `${process.env.NEXT_PUBLIC_SITE_URL || "https://close-ai.com"}/main/open-graph.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Close AI - Terms of Service",
+      },
+    ],
   },
   alternates: {
     canonical: "/terms",
