@@ -91,7 +91,7 @@ export const homeContent = {
     },
     heading: "Proven System",
     subheading:
-      "We have generated over 30,000 high quality leads for just over 1,000 real estate agents across the country.",
+      "We have generated over 50,000 high quality leads for just over 1,000 real estate agents across the country.",
     statCard: {
       globeTitle: "Our Stats",
       globeSubtitle: "View our numbers",

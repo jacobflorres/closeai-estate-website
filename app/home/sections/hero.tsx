@@ -161,7 +161,7 @@ export function Hero() {
         }}
         className="w-full"
       >
-        <div className="w-full max-w-4xl mt-6">
+        <div className="w-full max-w-4xl mx-auto mt-4">
           <WistiaPlayer
             mediaId={hero.video.mediaId}
             aspectRatio={hero.video.aspectRatio}
