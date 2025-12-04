@@ -76,7 +76,7 @@ export const metadata: Metadata = {
       "Get exclusive & motivated seller leads delivered daily. Pay-per-lead model with no contracts. Pre-qualified seller opportunities for real estate agents.",
     images: [
       {
-        url: "/main/open-graph.jpg",
+        url: `${process.env.NEXT_PUBLIC_SITE_URL || "https://close-ai.com"}/main/open-graph.jpg`,
         width: 1200,
         height: 630,
         alt: "Close AI - Real Estate Lead Generation",
@@ -88,7 +88,7 @@ export const metadata: Metadata = {
     title: "Close AI - Exclusive Real Estate Seller Leads",
     description:
       "Get exclusive & motivated seller leads delivered daily. Pay-per-lead model with no contracts.",
-    images: ["/main/open-graph.jpg"],
+    images: [`${process.env.NEXT_PUBLIC_SITE_URL || "https://close-ai.com"}/main/open-graph.jpg`],
     creator: "@closeai",
   },
   robots: {

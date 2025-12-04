@@ -13,6 +13,14 @@ export const metadata: Metadata = {
     title: "Privacy Policy - Close AI",
     description: "Close AI Privacy Policy - How we protect your information.",
     url: "/privacy",
+    images: [
+      {
+        url: `${process.env.NEXT_PUBLIC_SITE_URL || "https://close-ai.com"}/main/open-graph.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Close AI - Privacy Policy",
+      },
+    ],
   },
   alternates: {
     canonical: "/privacy",

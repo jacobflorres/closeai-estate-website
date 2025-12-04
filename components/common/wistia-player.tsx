@@ -30,22 +30,39 @@ export function WistiaPlayer({
   className,
   ...props
 }: WistiaPlayerProps) {
+  const [shouldLoad, setShouldLoad] = React.useState(false);
+  const containerRef = React.useRef<HTMLDivElement>(null);
+
   const paddingTop = React.useMemo(
     () => `${(1 / parseFloat(aspectRatio)) * 100}%`,
     [aspectRatio]
   );
 
+  React.useEffect(() => {
+    if (!containerRef.current) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setShouldLoad(true);
+            observer.disconnect();
+          }
+        });
+      },
+      {
+        rootMargin: "200px", // Start loading 200px before entering viewport
+        threshold: 0.1,
+      }
+    );
+
+    observer.observe(containerRef.current);
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <>
-      <Script
-        src="https://fast.wistia.com/player.js"
-        strategy="lazyOnload"
-      />
-      <Script
-        src={`https://fast.wistia.com/embed/${mediaId}.js`}
-        strategy="lazyOnload"
-        type="module"
-      />
+    <div ref={containerRef} className={cn("relative w-full", className)} {...props}>
       <style
         dangerouslySetInnerHTML={{
           __html: `
@@ -58,14 +75,25 @@ export function WistiaPlayer({
           `,
         }}
       />
-      <div className={cn("relative w-full", className)} {...props}>
-        {React.createElement("wistia-player", {
-          "media-id": mediaId,
-          aspect: aspectRatio,
-          className: "w-full h-auto",
-        })}
-      </div>
-    </>
+      {shouldLoad && (
+        <>
+          <Script
+            src="https://fast.wistia.com/player.js"
+            strategy="lazyOnload"
+          />
+          <Script
+            src={`https://fast.wistia.com/embed/${mediaId}.js`}
+            strategy="lazyOnload"
+            type="module"
+          />
+        </>
+      )}
+      {React.createElement("wistia-player", {
+        "media-id": mediaId,
+        aspect: aspectRatio,
+        className: "w-full h-auto",
+      })}
+    </div>
   );
 }
 

@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     url: "/",
     images: [
       {
-        url: "/main/open-graph.jpg",
+        url: `${process.env.NEXT_PUBLIC_SITE_URL || "https://close-ai.com"}/main/open-graph.jpg`,
         width: 1200,
         height: 630,
         alt: "Close AI - Exclusive Real Estate Seller Leads",
@@ -42,6 +42,7 @@ export const metadata: Metadata = {
     title: "Exclusive Real Estate Seller Leads | Pay Per Lead",
     description:
       "Get exclusive & motivated seller leads delivered daily. Only $75 per lead with no contracts.",
+    images: [`${process.env.NEXT_PUBLIC_SITE_URL || "https://close-ai.com"}/main/open-graph.jpg`],
   },
   alternates: {
     canonical: "/",
