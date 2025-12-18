@@ -29,17 +29,19 @@ const transitionVariants = {
 export const metadata: Metadata = {
   title: "Book Demo Call",
   description:
-    "Book a free demo call to learn more about our pay-per-lead system for real estate agents. Get exclusive seller leads delivered daily with no contracts.",
+    "Book a free demo call to learn more about our pay-per-lead system for home service companies and contractors. Get exclusive pre-qualified leads delivered daily with no contracts.",
   keywords: [
     "book demo call",
-    "real estate lead generation demo",
-    "seller leads demo",
+    "home service lead generation demo",
+    "contractor leads demo",
+    "roofer leads demo",
+    "HVAC leads demo",
     "close ai demo",
   ],
   openGraph: {
-    title: "Book Demo Call - Close AI Real Estate Lead Generation",
+    title: "Book Demo Call - Close AI Home Service Lead Generation",
     description:
-      "Book a free demo call to learn more about our pay-per-lead system for real estate agents.",
+      "Book a free demo call to learn more about our pay-per-lead system for home service companies and contractors.",
     url: "/book-call",
     images: [
       {

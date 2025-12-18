@@ -41,22 +41,25 @@ const generalSans = localFont({
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://close-ai.com"),
   title: {
-    default: "Close AI - Exclusive Real Estate Seller Leads | Pay Per Lead",
+    default: "Close AI - Exclusive Home Service Leads | Pay Per Lead for Contractors",
     template: "%s | Close AI",
   },
   description:
-    "Get exclusive & motivated seller leads delivered daily. Pay-per-lead model with no contracts. Pre-qualified seller opportunities for real estate agents. $75 per lead, verified in real-time.",
+    "Get exclusive & pre-qualified leads delivered daily for home service companies. Pay-per-lead model with no contracts. Perfect for roofers, HVAC, plumbers, and contractors. $75 per lead, verified in real-time.",
   keywords: [
-    "real estate seller leads",
-    "exclusive seller leads",
-    "pay per lead real estate",
-    "real estate lead generation",
-    "seller leads for agents",
-    "motivated seller opportunities",
-    "pre-qualified seller leads",
-    "real estate agent leads",
-    "listing leads",
-    "seller lead generation",
+    "home service leads",
+    "contractor leads",
+    "roofer leads",
+    "HVAC leads",
+    "plumber leads",
+    "pay per lead home service",
+    "exclusive contractor leads",
+    "pre-qualified home service leads",
+    "home service lead generation",
+    "contractor lead generation",
+    "home improvement leads",
+    "service company leads",
+    "no contract leads",
   ],
   authors: [{ name: "Close AI" }],
   creator: "Close AI",
@@ -71,23 +74,23 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "/",
     siteName: "Close AI",
-    title: "Close AI - Exclusive Real Estate Seller Leads | Pay Per Lead",
+    title: "Close AI - Exclusive Home Service Leads | Pay Per Lead for Contractors",
     description:
-      "Get exclusive & motivated seller leads delivered daily. Pay-per-lead model with no contracts. Pre-qualified seller opportunities for real estate agents.",
+      "Get exclusive & pre-qualified leads delivered daily for home service companies. Pay-per-lead model with no contracts. Perfect for roofers, HVAC, plumbers, and contractors.",
     images: [
       {
         url: `${process.env.NEXT_PUBLIC_SITE_URL || "https://close-ai.com"}/main/open-graph.jpg`,
         width: 1200,
         height: 630,
-        alt: "Close AI - Real Estate Lead Generation",
+        alt: "Close AI - Home Service Lead Generation",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Close AI - Exclusive Real Estate Seller Leads",
+    title: "Close AI - Exclusive Home Service Leads | Pay Per Lead",
     description:
-      "Get exclusive & motivated seller leads delivered daily. Pay-per-lead model with no contracts.",
+      "Get exclusive & pre-qualified leads delivered daily for home service companies. Pay-per-lead model with no contracts.",
     images: [`${process.env.NEXT_PUBLIC_SITE_URL || "https://close-ai.com"}/main/open-graph.jpg`],
     creator: "@closeai",
   },
@@ -124,7 +127,7 @@ export default function RootLayout({
     "@type": "Organization",
     name: COMPANY_INFO.name,
     description:
-      "Close AI provides exclusive, pre-qualified seller leads for real estate agents on a pay-per-lead basis with no contracts.",
+      "Close AI provides exclusive, pre-qualified leads for home service companies and contractors on a pay-per-lead basis with no contracts.",
     url: siteUrl,
     logo: `${siteUrl}/main/logo.jpg`,
     contactPoint: {
@@ -147,13 +150,13 @@ export default function RootLayout({
   const serviceSchema = {
     "@context": "https://schema.org",
     "@type": "Service",
-    serviceType: "Real Estate Lead Generation",
+    serviceType: "Home Service Lead Generation",
     provider: {
       "@type": "Organization",
       name: COMPANY_INFO.name,
     },
     description:
-      "Exclusive seller leads for real estate agents. Pay-per-lead model with no contracts. Pre-qualified opportunities delivered daily.",
+      "Exclusive leads for home service companies and contractors. Pay-per-lead model with no contracts. Pre-qualified opportunities delivered daily. Perfect for roofers, HVAC, plumbers, and other home service professionals.",
     areaServed: {
       "@type": "Country",
       name: "United States",

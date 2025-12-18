@@ -5,7 +5,6 @@ import Image from "next/image";
 import { SpecialBadge } from "@/components/common/special-badge";
 import { Button } from "@/components/ui/button";
 import { WistiaPlayer } from "@/components/common/wistia-player";
-import { Marquee, MarqueeContent, MarqueeFade, MarqueeItem } from "@/components/ui/marquee";
 import { TextEffect } from "@/components/ui/text-effect";
 import { AnimatedGroup } from "@/components/ui/animated-group";
 import { homeContent } from "@/content/pages/home";
@@ -168,47 +167,6 @@ export function Hero() {
           />
         </div>
       </AnimatedGroup>
-
-      {/* Brand Marquee */}
-      <AnimatedGroup
-        variants={{
-          container: {
-            visible: {
-              transition: {
-                staggerChildren: 0.05,
-                delayChildren: 1.2,
-              },
-            },
-          },
-          ...transitionVariants,
-        }}
-      >
-        <div className="max-w-3xl mt-16">
-          <h2 className="text-sm font-medium text-muted-foreground mb-4">
-            {hero.brands.title}
-          </h2>
-          <Marquee>
-            <MarqueeFade side="left" />
-            <MarqueeContent>
-              {hero.brands.logos.map((brand) => (
-                <MarqueeItem key={brand.name} className="mx-0">
-                  <div className="relative h-30 w-40 opacity-80 hover:opacity-100 transition-opacity dark:invert">
-                    <Image
-                      src={brand.image}
-                      alt={brand.name}
-                      fill
-                      className="object-contain"
-                      sizes="(max-width: 768px) 128px, 160px"
-                    />
-                  </div>
-                </MarqueeItem>
-              ))}
-            </MarqueeContent>
-            <MarqueeFade side="right" />
-          </Marquee>
-        </div>
-      </AnimatedGroup>
     </section>
   );
 }
-

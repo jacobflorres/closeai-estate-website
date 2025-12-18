@@ -4,7 +4,7 @@ import { privacyContent } from "@/content/pages/privacy";
 export const metadata: Metadata = {
   title: "Privacy Policy",
   description:
-    "Close AI Privacy Policy. Learn how we collect, use, and protect your personal information when using our real estate lead generation services.",
+    "Close AI Privacy Policy. Learn how we collect, use, and protect your personal information when using our home service lead generation services.",
   robots: {
     index: true,
     follow: true,

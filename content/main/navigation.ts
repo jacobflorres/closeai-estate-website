@@ -37,9 +37,9 @@ export interface NavigationLink {
 /** Main navigation links (shown in header on home page) */
 export const MAIN_NAV_LINKS: NavigationLink[] = [
   {
-    label: "Testimonials",
-    href: "#testimonials",
-    sectionId: "testimonials",
+    label: "Reviews",
+    href: "#reviews",
+    sectionId: "reviews",
   },
   {
     label: "Our Stats",

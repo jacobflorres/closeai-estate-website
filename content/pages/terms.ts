@@ -10,7 +10,7 @@ export const termsContent = {
     {
       heading: "Description of Services",
       content:
-        "Close AI provides lead generation services for real estate professionals. Our services focus on helping real estate agents generate exclusive seller leads on autopilot. We reserve the right to modify, suspend, or discontinue any aspect of our services at any time.",
+        "Close AI provides lead generation services for different industries. Our services focus on helping our clients generate exclusive leads on autopilot. We reserve the right to modify, suspend, or discontinue any aspect of our services at any time.",
     },
     {
       heading: "User Obligations",
