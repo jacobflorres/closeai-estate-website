@@ -4,7 +4,7 @@ import { termsContent } from "@/content/pages/terms";
 export const metadata: Metadata = {
   title: "Terms of Service",
   description:
-    "Close AI Terms of Service. Review our terms and conditions for using our real estate lead generation services.",
+    "Close AI Terms of Service. Review our terms and conditions for using our home service lead generation services.",
   robots: {
     index: true,
     follow: true,

@@ -1,88 +1,67 @@
 export const homeContent = {
   hero: {
     badge: {
-      label: "For Top Producing Agents & Team Leaders",
+      label: "For Home Service Companies",
     },
     heading: {
-      line1: "Get Exclusive & Motivated Seller",
-      line2: "Opportunities Delivered Daily",
+      line1: "Get Unlimited",
+      line2: "Pre-Qualified Leads",
     },
     subheading:
-      "Only pay for exclusive, pre-qualified seller leads — complete with screenshot proof of genuine intent. Real conversations. Real homeowners ready to sell — verified in real time. No contracts or fluff. Just $75 per lead.",
+      "Only pay per lead. No setup fees, contracts or commitments.",
     trust: {
       users: [
         { name: "Ana", image: "/users/ana.jpg" },
         { name: "Michael", image: "/users/michael.jpg" },
         { name: "Stacy", image: "/users/stacy.jpg" },
       ],
-      text: "Trusted by 1,000+ Agents Nationwide",
+      text: "Trusted by 1,000+ Partners Nationwide",
     },
     cta: {
       label: "Book Call",
       href: "#",
     },
     video: {
-      mediaId: "d1cuhgs1zu",
+      mediaId: "6thbpn4guq",
       aspectRatio: "1.7777777777777777",
     },
-    brands: {
-      title: "Companies That Trust Us",
-      logos: [
-        { name: "Century 21", image: "/brands/century.png" },
-        { name: "Coldwell Banker", image: "/brands/coldwell.png" },
-        { name: "Compass", image: "/brands/compass.png" },
-        { name: "EXP Realty", image: "/brands/exp.png" },
-        { name: "Keller Williams", image: "/brands/kw.png" },
-        { name: "RE/MAX", image: "/brands/remax.png" },
-        { name: "Sotheby's", image: "/brands/sotheby.png" },
-      ],
-    },
   },
-  testimonials: {
+  reviews: {
     badge: {
-      label: "Testimonials",
+      label: "Reviews",
     },
-    heading: "Client Testimonials",
+    heading: "Client Reviews",
     subheading:
-      "Hear from some of our top partners and the success they've found with us.",
+      "Join hundreds of companies who are already growing their business with our lead generation platform",
     items: [
       {
         id: "1",
-        name: "Zachary O.",
-        company: "Owner of Oppenheim Realty",
+        name: "Zachary",
+        company: "@Florida",
         image: "/users/zach.png",
-        quote: "Over 50+ listing appointments in just less than 4 months.",
-        videoId: "zq3mchedg9",
-        tags: ["Real Estate", "Listings"],
+        review: "Client has booked over 50+ booked appointments in just less than 4 months",
       },
       {
         id: "2",
-        name: "Tyler Q.",
-        company: "Thrive Real Estate Group",
+        name: "Tyler",
+        company: "@Colorado",
         image: "/users/tyler.png",
-        quote: "Tyler has closed over 19 deals in the past 9 months.",
-        videoId: "vp0lbfqutg",
-        tags: ["Real Estate", "Deals"],
+        review: "Tyler has closed over 19 deals in the past 9 months working with us.",
       },
       {
         id: "3",
-        name: "Ryan H.",
-        company: "Re/Max",
+        name: "Ryan",
+        company: "@Texas",
         image: "/users/ryan.png",
-        quote: "Ryan is setting listing appointments on autopilot.",
-        videoId: "mupe6h0jum",
-        tags: ["Real Estate", "Automation"],
+        review: "Ryan is setting high quality appointments on autopilot every single week.",
       },
       {
         id: "4",
-        name: "Luke S.",
-        company: "Re/Max",
+        name: "Luke",
+        company: "@Florida",
         image: "/users/luke.png",
-        quote: "Found instant success with a listing in less than 30 days.",
-        videoId: "44hl28bc8r",
-        tags: ["Real Estate", "Deals"],
+        review: "Found instant success with a closed deal in the first 30 days of working with us.",
       },
-      
     ],
   },
   stats: {
@@ -91,14 +70,14 @@ export const homeContent = {
     },
     heading: "Proven System",
     subheading:
-      "We have generated over 50,000 high quality leads for just over 1,000 real estate agents across the country.",
+      "We have generated over 50,000 high quality leads for just over 1,000 partners across the country.",
     statCard: {
       globeTitle: "Our Stats",
       globeSubtitle: "View our numbers",
       activeBadge: "Active Cities",
       stats: [
         {
-          label: "Agents Helped",
+          label: "Partners Helped",
           end: 1000,
           suffix: "+",
         },
@@ -144,7 +123,7 @@ export const homeContent = {
         },
       ],
       brands: {
-        title: "We’ve helped more than 1,000 real estate agents nationwide, including top-producing teams and brokerages, generating over 50,000 high-quality leads to date.",
+        title: "We’ve helped more than 1,000 partners nationwide, including top-producing companies, generating over 50,000 high-quality leads to date.",
         logos: [
           { name: "Century 21", image: "/brands/century.png" },
           { name: "Coldwell Banker", image: "/brands/coldwell.png" },
@@ -166,11 +145,11 @@ export const homeContent = {
     items: [
       {
         question: "How are your leads different from shared leads?",
-        answer: "Our leads are 100% exclusive to you. Unlike shared leads where multiple agents compete for the same homeowner, you're the only one receiving each lead. This means higher conversion rates and better ROI since you’re not racing against competitors."
+        answer: "Our leads are 100% exclusive to you. Unlike shared leads where multiple companies compete for the same homeowner, you're the only one receiving each lead. This means higher conversion rates and better ROI since you’re not racing against competitors."
       },
       {
         question: "What makes a lead 'pre-qualified'?",
-        answer: "We verify that each homeowner is interested in selling, confirm their property details, and ensure they aren’t already working with another agent. Every lead is vetted for intent so you’re only paying for prospects interested in selling."
+        answer: "We verify that each homeowner is interested in selling, confirm their details, and ensure they aren’t already working with another company. Every lead is vetted for intent so you’re only paying for interested homeowners."
       },
       {
         question: "Are there really any contracts?",
@@ -178,15 +157,15 @@ export const homeContent = {
       },
       {
         question: "How quickly will I start receiving leads?",
-        answer: "Once your campaign is set up (usually within 24-48 hours), seller leads begin flowing automatically. You'll receive instant notifications via SMS and email when a new lead comes in, so you can reach out while they’re actively considering listing their home."
+        answer: "Once your campaign is set up (usually within 24-48 hours), seller leads begin flowing automatically. You'll receive instant notifications via SMS and email when a new lead comes in, so you can reach out while they’re actively interested in your services."
       },
       {
         question: "What areas can you target?",
-        answer: "We provide seller leads in your target zip codes and neighborhoods. During setup, you choose the areas you want to focus on, and we’ll only send you leads from those specific locations where you want more listings."
+        answer: "We provide leads in your target zip codes. During setup, you choose the areas you want to focus on, and we’ll only send you leads from those specific locations where you want more leads."
       },
       {
         question: "If I receive a bad lead, I get a replacement?",
-        answer: "We stand behind our lead quality. If you receive a lead that doesn’t meet our pre-qualification standards, contact our support team and we’ll issue a credit. We also provide training resources to help you maximize your conversion from leads into listings."
+        answer: "We stand behind our lead quality. If you receive a lead that doesn’t meet our pre-qualification standards, contact our support team and we’ll issue a credit. We also provide training resources to help you maximize your conversion from leads into deals."
       },
     ],
   },
@@ -195,7 +174,7 @@ export const homeContent = {
       label: "Our Process",
     },
     heading: "How it Works",
-    subheading: "Our only focus is generating you listing opportunities. We do this by handing you exclusive & qualified leads on a pay-per-lead basis with no contracts or setup fees. This is how it works in 3 simple steps.",
+    subheading: "Our only focus is generating you more projects and dealflow. We do this by handing you exclusive & qualified leads on a pay-per-lead basis with no contracts or setup fees. This is how it works in 3 simple steps.",
     items: [
       {
         version: "1.0",
