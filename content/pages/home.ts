@@ -22,7 +22,7 @@ export const homeContent = {
       href: "#",
     },
     video: {
-      mediaId: "6thbpn4guq",
+      mediaId: "ipw95ava43",
       aspectRatio: "1.7777777777777777",
     },
   },
